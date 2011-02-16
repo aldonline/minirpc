@@ -30,6 +30,16 @@ On The Client
         console.log "1 + 2 = #{res}"
     </script>
 
+### Installation
+
+I have not released this as an NPM module yet because it is under heavy development. So the only way to use this is by getting source and linking via NPM link.
+The following will do the trick.
+
+    cd /usr/src
+    git clone git://github.com/aldonline/minirpc.git
+    cd minirpc
+    npm link .
+
 ### Error handling
 
 
