@@ -1,0 +1,13 @@
+{
+  "name": "minirpc",
+  "description": "Simple RPC. Call node functions from the browser.",
+  "version": "0.0.1",
+  "author": "Aldo Bucchi <aldo.bucchi@gmail.com>",
+  "dependencies": {
+    "express": ">= 1.0.1",
+    "coffee-script": ">= 1.0.0"
+  },
+  "keywords": ["rpc", "jsonrpc"],
+  "directories": { "lib": "./lib" },
+  "engines": { "node": ">= 0.2.6" }
+}

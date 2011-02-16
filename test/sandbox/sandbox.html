@@ -1,0 +1,19 @@
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>sandbox</title>
+		<script src="/jquery-1.5.js"></script>
+		<script src="/___minirpc.js"></script>
+		<script>
+			___minirpc.sum( 1, 2, function(res, err){
+				console.log( res )
+			})
+			___minirpc.print_request_headers(function(res, err){
+				console.log( res )
+			})
+		</script>
+	</head>
+	<body>
+		This is the sandbox application
+	</body>
+</html>
