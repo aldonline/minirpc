@@ -72,7 +72,7 @@ get_minified_client_js = (path, names, cb) ->
 class RPC
   _endpoint_path: '/___minirpc'
   _script_path: '/___minirpc.js'
-  _get_method_names: -> k for k, v of @ when 0 isnt k.indexOf '_'
+  _get_method_names: -> k for k of @ when 0 isnt k.indexOf '_'
   _get_client_js_stub: ->
     code = ''
   _middleware: => ( req, res, next ) =>
