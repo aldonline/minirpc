@@ -34,7 +34,7 @@ On The Client
 
 I have not released this as an NPM module yet because it is under heavy development. So the only way to use this is by getting source and linking via NPM link.
 The following will do the trick.
-
+    mkdir -p /usr/src
     cd /usr/src
     git clone git://github.com/aldonline/minirpc.git
     cd minirpc
