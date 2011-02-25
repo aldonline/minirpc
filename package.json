@@ -9,5 +9,6 @@
   },
   "keywords": ["rpc", "jsonrpc"],
   "directories": { "lib": "./lib" },
-  "engines": { "node": ">= 0.2.6" }
+  "engines": { "node": ">= 0.2.6" },
+  "repository" : "git://github.com/aldonline/minirpc.git"
 }
