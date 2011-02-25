@@ -8,10 +8,8 @@ On the Server
     rpc.sum = (a, b) -> a + b
 
     # you can access current HTTP request ( available as rpc._request )
-    rpc.logout = ->
-      # to kill a session for example
-      delete rpc._request.session
-      true
+    rpc.get_header = (header_name) ->
+      rpc._request.headers[header_name]
 
     # async? no problem, just return a function that takes a callback(res, err) as argument
     rpc.get_weather = ( zip_code ) -> 
