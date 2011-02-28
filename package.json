@@ -1,7 +1,7 @@
 {
   "name": "minirpc",
   "description": "Simple RPC. Call node functions from the browser.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Aldo Bucchi <aldo.bucchi@gmail.com>",
   "dependencies": {
     "express": ">= 1.0.1",
