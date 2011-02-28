@@ -91,7 +91,6 @@ class RPC
     else
       next()
   _request: null
-  _session: null
 
 get_req_content = (req, cb) ->
   req.on 'data'
