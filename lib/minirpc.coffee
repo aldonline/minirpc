@@ -75,6 +75,10 @@ class RPC
   _get_method_names: -> k for k of @ when 0 isnt k.indexOf '_'
   _get_client_js_stub: ->
     code = ''
+  # preferred way of configuring the express/connect server
+  _init : ( server ) ->
+    server.use @_middleware()
+  # or you can access the middleware function if you wish
   _middleware: => ( req, res, next ) =>
     # send javascript stub
     if req.url is @_script_path and req.method is 'GET'
