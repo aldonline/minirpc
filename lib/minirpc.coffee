@@ -82,6 +82,7 @@ class RPC
   _middleware: => ( req, res, next ) =>
     # send javascript stub
     if req.url is @_script_path and req.method is 'GET'
+      res.headers ?= {}
       res.headers['Content-Type'] = 'application/javascript'
       get_minified_client_js @_endpoint_path, @_get_method_names(), (code) ->
         res.send code
