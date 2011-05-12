@@ -14,7 +14,7 @@ On the Server
     # async? no problem, just return a function that takes a callback(res, err) as argument
     rpc.get_weather = ( zip_code ) -> 
       ( cb ) ->
-        some_remote_service zip_code, true, (res) -> cb res
+        some_remote_service zip_code, true, (res) -> cb null, res
 
     # if you're using express/connect
     app.use rpc._middleware()
