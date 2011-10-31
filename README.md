@@ -22,9 +22,9 @@ On the Server
 On The Client
 
     <!-- Will dynamically create proxies for every method attached to rpc -->
-    <script src="/___rpc.js"></script>
+    <script src="/___minirpc.js"></script>
     <script>
-      ___rpc.sum 1, 2, (res) ->
+      ___minirpc.sum 1, 2, (res) ->
         console.log "1 + 2 = #{res}"
     </script>
 
