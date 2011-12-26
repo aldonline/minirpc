@@ -1,3 +1,8 @@
+THIS MODULE IS OLD AND **DEPRECATED**.
+I RECOMMEND YOU USE AN ALTERNATIVE SUCH AS https://github.com/substack/dnode
+
+----
+
 ### Using with connect
 
 On the Server
